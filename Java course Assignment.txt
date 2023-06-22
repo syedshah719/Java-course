@@ -1,0 +1,145 @@
+1. Write a Java program to get a number from the user and print whether it is positive or negative.
+
+Sample Output
+
+Input number: 35 Expected Output : Number is positive
+
+--> import java.util.Scanner;
+public class Exercise1 {
+
+    
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int input = in.nextInt();
+
+        if (input > 0)
+        {
+            System.out.println("Number is positive");
+        }
+        else if (input < 0)
+        {
+            System.out.println("Number is negative");
+        }
+        else
+        {
+            System.out.println("Number is zero");
+        }
+    }
+}
+
+2. Take three numbers from the user and print the greatest number
+
+Sample Output
+
+Input the 1st number: 25 Input the 2nd number: 78 Input the 3rd number: 87 Expected Output : The greatest: 87
+
+--> import java.util.*;
+ 
+public class LargestNumber{   
+     
+     public static void main(String []args)
+     {
+            int a=0,b=0,c=0;
+            int largest=0;
+            //Scanner class to take user input.
+            Scanner X = new Scanner(System.in);
+             
+            System.out.print("Enter First No. :");
+            a = X.nextInt(); //read integer number
+             
+            System.out.print("Enter Second No. :");
+            b = X.nextInt(); //read integer number
+             
+            System.out.print("Enter Third No. :");
+            c = X.nextInt(); //read integer number
+             
+            if( a>b && a> c)
+                largest = a;
+            else if(b>a && b>c)
+                largest = b;
+            else
+                largest = c;
+             
+            System.out.println("Lagest Number is : "+largest);
+     }
+}
+
+3. Write a Java program that keeps a number from the user and generates an integer between 1 and 7 and displays the name of the weekday.
+
+Sample Output Input number: 3 Expected Output : Wednesday
+
+--> import java.util.Scanner;
+public class Exercise5 {
+
+    
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int day = in.nextInt();
+
+        System.out.println(getDayName(day));
+  }
+    public static String getDayName(int day) {
+        String dayName = "";
+        switch (day) {
+            case 1: dayName = "Monday"; break;
+            case 2: dayName = "Tuesday"; break;
+            case 3: dayName = "Wednesday"; break;
+            case 4: dayName = "Thursday"; break;
+            case 5: dayName = "Friday"; break;
+            case 6: dayName = "Saturday"; break;
+            case 7: dayName = "Sunday"; break;
+            default:dayName = "Invalid day range";
+        }
+
+        return dayName;
+    }
+}
+
+4. Write a program in Java to display the first 10 natural numbers
+
+--> public class Exercise10 {
+    
+  public static void main(String[] args)
+    {     
+    int i;
+	System.out.println ("The first 10 natural numbers are:\n");
+	for (i=1;i<=10;i++)
+	{      
+		System.out.println (i);
+	}
+System.out.println ("\n");
+}
+}
+
+5. Write a program in Java to input 5 numbers from keyboard and find their sum and average
+
+-->import java.util.Scanner;
+public class Exercise12 {
+
+    
+  public static void main(String[] args)
+
+{       
+    int i,n=0,s=0;
+	double avg;
+	{
+	   
+        System.out.println("Input the 5 numbers : ");  
+         
+	}
+		for (i=0;i<5;i++)
+		{
+		    Scanner in = new Scanner(System.in);
+		    n = in.nextInt();
+		    
+  		s +=n;
+	}
+	avg=s/5;
+	System.out.println("The sum of 5 no is : " +s+"\nThe Average is : " +avg);
+ 
+}
+}
